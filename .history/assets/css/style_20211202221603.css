@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*
+1.vi tri
+2. kich thuoc
+3.Mau sac
+4. Hinh dang
+*/
+.clear {
+  clear: both;
+}
+#main {
+}
+#header {
+  height: 46px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#nav {
+  display: inline-block;
+}
+#nav,
+.subnav {
+  list-style-type: none;
+}
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: block;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+  color: black;
+  background-color: #ccc;
+}
+#nav li:hover .subnav {
+  display: block;
+}
+#nav > li {
+  display: inline-block;
+  position: relative;
+}
+#nav .nav-arrow-down {
+  font-size: 14px;
+}
+#nav .subnav {
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav a {
+  color: black;
+  padding: 0 12px;
+  line-height: 38px;
+}
+#header .search-btn {
+  float: right;
+  padding: 0 21px;
+  cursor: pointer;
+}
+#header .search-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 46px;
+}
+#header .search-btn:hover {
+  background-color: #f44336;
+}
+#slider {
+  margin-top: 46px;
+  position: relative;
+  background: url("/assets/img/chicago.jpg") top center / cover no-repeat;
+}
+#slider .text-content {
+  position: absolute;
+  bottom: 47px;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+#silder .heading {
+  font-weight: 500px;
+  font-size: 24px;
+}
+#slider .content {
+  font-size: 15px;
+  margin-top: 25px;
+}
+#content {
+}
+#content .content-section {
+  padding: 64px 0;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content .section-heading {
+  font-size: 30px;
+  font-weight: 500px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+#content .section-sub-heading {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 25px;
+  font-style: italic;
+  opacity: 0.6;
+}
+#content .about-text {
+  margin-top: 25px;
+  text-align: justify;
+  line-height: 1.4;
+  font-size: 15px;
+}
+#content .member-item {
+  float: left;
+  width: calc(100% / 3);
+  text-align: center;
+}
+#content .Team {
+  margin-top: 48px;
+}
+#content .member-name {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+#content .member-img {
+  width: 154px;
+  border-radius: 4px;
+}
+
+/* Tour section */
+.tour__section {
+  background-color: #000;
+}
+.section-heading,
+.section-sub-heading {
+  color: #fff;
+}
+.ticket__list {
+  background-color: #fff;
+  margin-top: 40px;
+}
+.ticket__list-item {
+  color: #757575;
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+}
+.ticket__list .sold-out {
+  color: #fff;
+  background-color: #f44336;
+  padding: 3px 4px;
+  margin-left: 16px;
+}
+.ticket__list .quantity {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+}
+
+#footer {
+}
